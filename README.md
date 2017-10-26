@@ -1,24 +1,46 @@
-# README
+# Cable Chat
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project demos the "Chat Mechanism" with ActionCable in Rails 5.
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+## Version
 
-* Configuration
+- Ruby：2.4.0
+- Rails：5.1.4
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+## Usage
 
-* Services (job queues, cache servers, search engines, etc.)
+### Clone Project
 
-* Deployment instructions
+```
+$ git clone git@github.com:alanyeh20001/cable_chat.git
+```
 
-* ...
+### Bundle
+
+```
+$ bundle install
+```
+
+### Add Secret Files
+
+Duplicate `cable.yml.example` & `database.yml.example` & `secrets.yml.example` to `<file_name>.yml` , which file_name represents three file names as described.
+
+### Migration
+
+```
+$ rake db:create
+$ rake db:migrate
+```
+
+### Redis
+
+- Install redis via [brew](https://brew.sh/index_zh-tw.html) or [wget](https://redis.io/topics/quickstartf) .
+- Start Redis.
+
+------
+
+### Enjoy & Customize it! Have Fun 😁
